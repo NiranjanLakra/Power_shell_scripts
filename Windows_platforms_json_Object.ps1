@@ -25,6 +25,18 @@ $supported_platforms = @{
             'Arch' = @('x86-64')
             'SP' = @('SP1','pre-SP1')
         }
+        'Windows 7 Embedded' = @{
+            'Arch' = @('x86-64')
+            'SP' = @('SP1','pre-SP1')
+        }
+        'POSReady7(Windows7)' = @{
+            'Arch' = @('x86-64')
+            'SP' = @('SP1','pre-SP1')
+        }
+        'Thin(Windows7)' = @{
+            'Arch' = @('x86-64')
+            'SP' = @('SP1','pre-SP1')
+        }
 
     }
     'windows 8' = @{
@@ -109,4 +121,3 @@ $supported_platforms = @{
 $supported = $supported_platforms | ConvertTo-Json
 $errr = $null
 $MyCustomJsonObject = [Microsoft.PowerShell.Commands.JsonObject]::ConvertFromJson($supported, [ref]$errr)
-$MyCustomJsonObject
