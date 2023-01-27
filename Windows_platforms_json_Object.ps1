@@ -108,4 +108,5 @@ $supported_platforms = @{
 
 $supported = $supported_platforms | ConvertTo-Json
 $errr = $null
-$MyJsonObject = [Microsoft.PowerShell.Commands.JsonObject]::ConvertFromJson($supported, [ref]$errr)
+$MyCustomJsonObject = [Microsoft.PowerShell.Commands.JsonObject]::ConvertFromJson($supported, [ref]$errr)
+$MyCustomJsonObject
